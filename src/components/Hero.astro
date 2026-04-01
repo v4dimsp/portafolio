@@ -1,0 +1,541 @@
+---
+import profile from '../data/profile.json';
+
+const orbitIcons = [
+  { slug: 'java',       name: 'Java',       angle: 0   },
+  { slug: 'python',     name: 'Python',     angle: 60  },
+  { slug: 'javascript', name: 'JavaScript', angle: 120 },
+  { slug: 'docker',     name: 'Docker',     angle: 180 },
+  { slug: 'git',        name: 'Git',        angle: 240 },
+  { slug: 'springboot', name: 'Spring',     angle: 300 },
+];
+---
+
+<section id="hero" class="hero">
+  <!-- Floating background code snippets -->
+  <div class="hero__bg" aria-hidden="true">
+    <span class="code-float" style="left: 7%; top: 22%; animation-delay: 0s; animation-duration: 20s">const dev = "full-stack";</span>
+    <span class="code-float" style="left: 70%; top: 12%; animation-delay: 5s; animation-duration: 23s">git push origin main</span>
+    <span class="code-float" style="left: 4%; top: 68%; animation-delay: 14s; animation-duration: 18s">SELECT * FROM skills;</span>
+    <span class="code-float" style="left: 27%; top: 9%; animation-delay: 7s; animation-duration: 19s">npm run dev</span>
+    <span class="code-float" style="left: 84%; top: 70%; animation-delay: 11s; animation-duration: 22s">return response.json()</span>
+    <span class="code-float" style="left: 15%; top: 88%; animation-delay: 1s; animation-duration: 26s">spring.datasource.url=jdbc...</span>
+  </div>
+
+  <div class="container hero__inner">
+    <!-- LEFT: text -->
+    <div class="hero__text">
+      <div class="hero__status">
+        <span class="hero__status-dot"></span>
+        <span data-i18n="hero.status">Disponible para trabajar</span>
+      </div>
+
+      <p class="hero__greeting" data-i18n="hero.greeting">Hola, soy</p>
+
+      <!-- Glitch effect on name -->
+      <h1 class="hero__name" data-text={profile.alias}>
+        {profile.alias}<span class="hero__dot">.</span>
+      </h1>
+
+      <p class="hero__role">{profile.role}<span class="hero__cursor" aria-hidden="true"></span></p>
+
+      <p class="hero__tagline i18n-es">{profile.tagline}</p>
+      <p class="hero__tagline i18n-en">{profile.tagline_en}</p>
+
+      <!-- Quick-scan highlights for recruiters -->
+      <div class="hero__highlights">
+        <span class="hero__chip">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span class="i18n-es">6 meses de experiencia</span>
+          <span class="i18n-en">6 months experience</span>
+        </span>
+        <span class="hero__chip">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span class="i18n-es">10+ tecnologías</span>
+          <span class="i18n-en">10+ technologies</span>
+        </span>
+        <span class="hero__chip">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+          <span class="i18n-es">Disponible ahora</span>
+          <span class="i18n-en">Available now</span>
+        </span>
+      </div>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn-primary">
+          <span data-i18n="hero.cta.projects">Ver proyectos</span>
+        </a>
+        <a href={profile.github} target="_blank" rel="noopener" class="btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: avatar with orbit -->
+    <div class="hero__visual" aria-hidden="true">
+      <div class="avatar-orbit">
+
+        <!-- Orbit ring with tech icons -->
+        <div class="orbit-ring">
+          {orbitIcons.map(icon => (
+            <div class="orbit-item" style={`transform: rotate(${icon.angle}deg) translateY(-140px)`}>
+              <div class="orbit-icon" title={icon.name}>
+                <img
+                  src={`https://cdn.simpleicons.org/${icon.slug}/808080`}
+                  alt={icon.name}
+                  width="15"
+                  height="15"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <!-- Pulsing accent ring -->
+        <div class="avatar-pulse-ring"></div>
+
+        <!-- Avatar -->
+        <div class="hero__avatar">
+          <img src="./logo_image.jpg" alt={`Logo de ${profile.alias}`} />
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="hero__scroll">
+    <span>scroll</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </div>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(ellipse at 60% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 60%);
+  }
+
+  /* ── Floating code background ─────────────── */
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .code-float {
+    position: absolute;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: var(--accent);
+    opacity: 0;
+    white-space: nowrap;
+    animation: drift linear infinite;
+  }
+
+  @keyframes drift {
+    0%   { transform: translateY(0)     translateX(0);    opacity: 0; }
+    12%  { opacity: 0.3; }
+    88%  { opacity: 0.3; }
+    100% { transform: translateY(-55px) translateX(14px); opacity: 0; }
+  }
+
+  /* ── Layout ───────────────────────────────── */
+  .hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+    padding-block: 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── Left: text ───────────────────────────── */
+  .hero__text {
+    flex: 1;
+    max-width: 520px;
+  }
+
+  /* Status badge */
+  .hero__status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.08);
+    border: 1px solid rgba(74, 222, 128, 0.22);
+    border-radius: 99px;
+    padding: 5px 14px;
+    margin-bottom: 28px;
+    letter-spacing: 0.02em;
+  }
+
+  .hero__status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4ade80;
+    flex-shrink: 0;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0   rgba(74, 222, 128, 0.5); }
+    50%       { box-shadow: 0 0 0 5px rgba(74, 222, 128, 0);   }
+  }
+
+  .hero__greeting {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  /* ── Glitch effect on name ────────────────── */
+  .hero__name {
+    font-size: clamp(3.5rem, 9vw, 6rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .hero__name::before,
+  .hero__name::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .hero__name::before {
+    left: 3px;
+    color: var(--text-primary);
+    text-shadow: -2px 0 #ff0040;
+    clip-path: polygon(0 0, 100% 0, 100% 42%, 0 42%);
+    animation: glitch-top 5s infinite linear;
+  }
+
+  .hero__name::after {
+    left: -3px;
+    color: var(--text-primary);
+    text-shadow: 2px 0 var(--accent);
+    clip-path: polygon(0 58%, 100% 58%, 100% 100%, 0 100%);
+    animation: glitch-bot 5s infinite linear;
+  }
+
+  @keyframes glitch-top {
+    0%, 82%, 100% { transform: translateX(0); opacity: 0; }
+    83%            { transform: translateX(-4px); opacity: 1; }
+    85%            { transform: translateX(4px);  opacity: 1; }
+    87%            { transform: translateX(-2px); opacity: 0.6; }
+    89%            { transform: translateX(0);    opacity: 0; }
+  }
+
+  @keyframes glitch-bot {
+    0%, 84%, 100% { transform: translateX(0); opacity: 0; }
+    85%            { transform: translateX(4px);  opacity: 1; }
+    87%            { transform: translateX(-4px); opacity: 1; }
+    89%            { transform: translateX(2px);  opacity: 0.6; }
+    91%            { transform: translateX(0);    opacity: 0; }
+  }
+
+  .hero__dot {
+    color: var(--accent);
+  }
+
+  /* Role + cursor */
+  .hero__role {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    color: var(--accent);
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .hero__cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.15em;
+    background: var(--accent);
+    border-radius: 1px;
+    animation: blink 1.1s step-end infinite;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+
+  .hero__tagline {
+    font-size: 15px;
+    color: var(--text-muted);
+    max-width: 420px;
+    margin-bottom: 40px;
+    line-height: 1.75;
+  }
+
+  /* Quick-scan chips */
+  .hero__highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+
+  .hero__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    padding: 5px 12px;
+    transition: border-color var(--transition), color var(--transition);
+  }
+
+  .hero__chip svg {
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .hero__chip:hover {
+    border-color: rgba(0, 212, 255, 0.3);
+    color: var(--text-primary);
+  }
+
+  .hero__actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* ── Right: orbit visual ──────────────────── */
+  .hero__visual {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Orbit container — everything is centered inside */
+  .avatar-orbit {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* The rotating ring */
+  .orbit-ring {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px dashed rgba(0, 212, 255, 0.18);
+    border-radius: 50%;
+    animation: orbit-spin 28s linear infinite;
+  }
+
+  @keyframes orbit-spin {
+    from { transform: rotate(0deg);   }
+    to   { transform: rotate(360deg); }
+  }
+
+  /* Each item is placed at a fixed angle on the ring */
+  .orbit-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 34px;
+    height: 34px;
+    margin: -17px;
+    /* static angle offset — set via inline style */
+  }
+
+  /* The icon inside counter-rotates to stay upright */
+  .orbit-icon {
+    width: 100%;
+    height: 100%;
+    background: var(--bg-elevated);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: orbit-counter 28s linear infinite;
+    transition: background var(--transition), border-color var(--transition);
+  }
+
+  .orbit-icon:hover {
+    background: rgba(0, 212, 255, 0.08);
+    border-color: rgba(0, 212, 255, 0.5);
+  }
+
+  .orbit-icon img {
+    filter: brightness(0) invert(1);
+    opacity: 0.45;
+    transition: filter var(--transition), opacity var(--transition);
+  }
+
+  .orbit-icon:hover img {
+    filter: brightness(0) invert(1) drop-shadow(0 0 4px var(--accent));
+    opacity: 1;
+  }
+
+  @keyframes orbit-counter {
+    from { transform: rotate(0deg);    }
+    to   { transform: rotate(-360deg); }
+  }
+
+  /* Pulsing ring just outside avatar */
+  .avatar-pulse-ring {
+    position: absolute;
+    width: 218px;
+    height: 218px;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--accent);
+    animation: pulse-ring 3s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  @keyframes pulse-ring {
+    0%   { opacity: 0;    transform: scale(0.97); }
+    40%  { opacity: 0.35; transform: scale(1);    }
+    100% { opacity: 0;    transform: scale(1.06); }
+  }
+
+  /* Avatar */
+  .hero__avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0, 212, 255, 0.22);
+    overflow: hidden;
+    background: var(--bg-surface);
+    box-shadow: 0 0 32px rgba(0, 212, 255, 0.08);
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ── Scroll hint ──────────────────────────── */
+  .hero__scroll {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    opacity: 0.35;
+    z-index: 1;
+  }
+
+  /* ── Responsive ───────────────────────────── */
+  @media (max-width: 860px) {
+    .avatar-orbit {
+      width: 260px;
+      height: 260px;
+    }
+    .hero__avatar {
+      width: 160px;
+      height: 160px;
+    }
+    .avatar-pulse-ring {
+      width: 178px;
+      height: 178px;
+    }
+    /* Keep orbit-item translateY synced with ring size */
+    .orbit-ring {
+      /* ring diameter matches container */
+    }
+  }
+
+  @media (max-width: 700px) {
+    .hero__inner {
+      flex-direction: column;
+      text-align: center;
+      padding-block: 60px;
+      gap: 48px;
+    }
+    .hero__tagline {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero__actions {
+      justify-content: center;
+    }
+    .hero__role {
+      justify-content: center;
+    }
+    .hero__status {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero__name {
+      display: block;
+      text-align: center;
+    }
+    .hero__highlights {
+      justify-content: center;
+    }
+    .avatar-orbit {
+      width: 240px;
+      height: 240px;
+    }
+    .hero__avatar {
+      width: 150px;
+      height: 150px;
+    }
+    .avatar-pulse-ring {
+      width: 168px;
+      height: 168px;
+    }
+  }
+</style>

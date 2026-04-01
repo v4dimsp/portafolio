@@ -1,0 +1,143 @@
+---
+import profile from '../data/profile.json';
+---
+
+<section id="about">
+  <hr class="divider" />
+  <div class="container">
+    <p class="section-label" data-i18n="section.about.label">Sobre mí</p>
+    <h2 class="section-title" data-i18n="section.about.title">¿Quién soy?</h2>
+
+    <div class="about__grid">
+
+      <div class="about__text">
+        <div class="i18n-es">
+          {profile.about.map((para: string) => <p>{para}</p>)}
+        </div>
+        <div class="i18n-en">
+          {profile.about_en.map((para: string) => <p>{para}</p>)}
+        </div>
+      </div>
+
+      <div class="about__meta">
+        <div class="about__block">
+          <p class="about__block-label" data-i18n="about.languages">Idiomas</p>
+          <ul class="about__lang-list">
+            {profile.languages.map(lang => (
+              <li class="about__lang-item">
+                <span class="about__lang-name">
+                  <span class="i18n-es">{lang.name}</span>
+                  <span class="i18n-en">{lang.name_en}</span>
+                </span>
+                <span class="about__lang-level">
+                  <span class="i18n-es">{lang.level}</span>
+                  <span class="i18n-en">{lang.level_en}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div class="about__block">
+          <p class="about__block-label" data-i18n="about.location">Ubicación</p>
+          <p class="about__location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Zaragoza, España
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .about__grid {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 72px;
+    align-items: start;
+  }
+
+  /* Paragraphs */
+  .about__text p {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.85;
+  }
+
+  .about__text p + p {
+    margin-top: 20px;
+  }
+
+  /* Meta column */
+  .about__block {
+    margin-bottom: 40px;
+  }
+
+  .about__block:last-child {
+    margin-bottom: 0;
+  }
+
+  .about__block-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    opacity: 0.8;
+    margin-bottom: 16px;
+  }
+
+  .about__lang-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .about__lang-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .about__lang-item:first-child {
+    border-top: 1px solid var(--border);
+  }
+
+  .about__lang-name {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .about__lang-level {
+    color: var(--text-muted);
+    font-size: 12px;
+  }
+
+  .about__location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+
+  .about__location svg {
+    color: var(--accent);
+    opacity: 0.7;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 768px) {
+    .about__grid {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+  }
+</style>

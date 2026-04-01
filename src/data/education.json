@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Master Desarrollo Full Stack",
+    "institution": "MasterD",
+    "period": "2025 – Actualidad",
+    "highlights": [
+      "Desarrollo Full Stack con Spring, Django y Node.js",
+      "Diseño de bases de datos SQL/NoSQL (MySQL, MongoDB)",
+      "Desarrollo de APIs con integración cliente-servidor",
+      "Seguridad Web e Inteligencia Artificial aplicada",
+      "Metodología Scrum y flujos de trabajo ágiles"
+    ]
+  },
+  {
+    "title": "Grado Superior – Desarrollo de Aplicaciones Multiplataforma",
+    "institution": "FP",
+    "period": "2022 – 2024",
+    "highlights": [
+      "Desarrollo móvil nativo con Android Studio",
+      "Programación Orientada a Objetos en Java",
+      "Gestión de bases de datos SQL y NoSQL",
+      "Comunicación y transmisión de datos via Sockets con Python",
+      "Integración de información con HTML y XML"
+    ]
+  },
+  {
+    "title": "Grado Medio – Sistemas Microinformáticos y Redes",
+    "institution": "FP",
+    "period": "2020 – 2022",
+    "highlights": [
+      "Administración de sistemas Windows y Linux",
+      "Automatización con scripts BATCH y BASH",
+      "Infraestructura de redes locales (LAN)",
+      "Soporte y mantenimiento de hardware",
+      "Herramientas de productividad ofimática"
+    ]
+  }
+]

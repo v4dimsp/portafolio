@@ -1,0 +1,24 @@
+[
+  {
+    "company": "Goya Soluciones",
+    "role": "Programador Web",
+    "period": "Mar 2026 – Actualidad",
+    "highlights": [
+      "Desarrollo de aplicaciones web empresariales con la plataforma Flexygo (low-code)",
+      "Programación de lógica de negocio y servicios backend en C#",
+      "Diseño, modelado y gestión de bases de datos relacionales con MySQL",
+      "Adaptación e integración de módulos según requerimientos del cliente"
+    ]
+  },
+  {
+    "company": "ReM Informática",
+    "role": "Técnico Informático – Prácticas",
+    "period": "2022 – 2024",
+    "highlights": [
+      "Administración de sistemas Windows en entornos empresariales",
+      "Configuración y monitoreo de servidores y estaciones de trabajo",
+      "Gestión de redes locales: DNS, DHCP, Active Directory",
+      "Implementación de políticas de seguridad y resolución de incidencias"
+    ]
+  }
+]

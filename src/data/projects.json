@@ -1,0 +1,21 @@
+[
+  {
+    "title": "Portfolio Personal",
+    "description": "Este mismo portafolio. Construido con Astro, diseño dark minimalista con acento cyan, datos en JSON y cambio de idioma ES/EN automático.",
+    "description_en": "This portfolio. Built with Astro, dark minimalist design with cyan accent, JSON-driven data and automatic ES/EN language switching.",
+    "tags": ["Astro", "CSS"],
+    "github": "https://github.com/v4dimsp/portfolio",
+    "demo": null,
+    "status": "live"
+  },
+  {
+    "title": "Docker Template para Flexygo Low-Code",
+    "description": "Plantilla para desplegar Flexygo Low-Code en un contenedor Docker. Permite la instalación y configuración automática mediante script, incluyendo la definición de contraseña. Diseñada para simplificar el despliegue debido a la limitada documentación oficial.",
+    "description_en": "Template to deploy Flexygo Low-Code inside a Docker container. It enables automated setup via script, including password configuration. Designed to simplify deployment due to the limited official documentation.",
+    "tags": ["Docker", "Flexygo", "Low-Code", "Automation", "Batch"],
+    "github": "https://github.com/v4dimsp/flexygo-docker-template",
+    "demo": null,
+    "status": "live"
+  }
+
+]

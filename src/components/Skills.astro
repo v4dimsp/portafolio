@@ -1,0 +1,132 @@
+---
+import skills from '../data/skills.json';
+
+const BASE = 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons';
+
+const iconMap: Record<string, string> = {
+  'Java':           `${BASE}/java/java-original.svg`,
+  'Python':         `${BASE}/python/python-original.svg`,
+  'JavaScript':     `${BASE}/javascript/javascript-original.svg`,
+  'C#':             `${BASE}/csharp/csharp-original.svg`,
+  'C++':            `${BASE}/cplusplus/cplusplus-original.svg`,
+  'HTML':           `${BASE}/html5/html5-original.svg`,
+  'CSS':            `${BASE}/css3/css3-original.svg`,
+  'Spring Boot':    `${BASE}/spring/spring-original.svg`,
+  'Django':         `${BASE}/django/django-plain.svg`,
+  'Node.js':        `${BASE}/nodejs/nodejs-original.svg`,
+  'Astro':          'https://cdn.simpleicons.org/astro/ffffff',
+  'MySQL':          `${BASE}/mysql/mysql-original.svg`,
+  'MongoDB':        `${BASE}/mongodb/mongodb-original.svg`,
+  'PostgreSQL':     `${BASE}/postgresql/postgresql-original.svg`,
+  'SQL Server':     `${BASE}/microsoftsqlserver/microsoftsqlserver-plain.svg`,
+  'Git':            `${BASE}/git/git-original.svg`,
+  'GitHub':         `${BASE}/github/github-original.svg`,
+  'Android Studio': `${BASE}/androidstudio/androidstudio-original.svg`,
+  'Docker':         `${BASE}/docker/docker-original.svg`,
+  'Linux':          `${BASE}/linux/linux-original.svg`,
+};
+---
+
+<section id="skills">
+  <hr class="divider" />
+  <div class="container">
+    <p class="section-label" data-i18n="section.skills.label">Skills</p>
+    <h2 class="section-title" data-i18n="section.skills.title">Tecnologías</h2>
+
+    <div class="skills__grid">
+      {skills.map(group => (
+        <div class="skill-group">
+          <p class="skill-group__label">{group.category}</p>
+          <div class="skill-group__items">
+            {group.items.map(item => (
+              <span class="skill-item">
+                {iconMap[item] && (
+                  <img
+                    src={iconMap[item]}
+                    alt=""
+                    width="13"
+                    height="13"
+                    class="skill-icon"
+                    loading="lazy"
+                  />
+                )}
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .skills__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+
+  .skill-group {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    transition: border-color var(--transition);
+  }
+
+  .skill-group:hover {
+    border-color: rgba(0, 212, 255, 0.2);
+  }
+
+  .skill-group__label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+  }
+
+  .skill-group__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skill-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: var(--radius-md);
+    background: var(--bg-elevated);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    transition: color var(--transition), border-color var(--transition), background var(--transition), box-shadow var(--transition);
+    cursor: default;
+  }
+
+  .skill-item:hover {
+    color: var(--accent);
+    border-color: rgba(0, 212, 255, 0.35);
+    background: rgba(0, 212, 255, 0.05);
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.08);
+  }
+
+  .skill-icon {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+    filter: brightness(0) invert(1);
+    opacity: 0.45;
+    transition: filter var(--transition), opacity var(--transition);
+  }
+
+  .skill-item:hover .skill-icon {
+    filter: brightness(0) invert(1) drop-shadow(0 0 4px var(--accent));
+    opacity: 1;
+  }
+</style>
