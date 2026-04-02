@@ -4,7 +4,7 @@
     "description": "Este mismo portafolio. Construido con Astro, diseño dark minimalista con acento cyan, datos en JSON y cambio de idioma ES/EN automático.",
     "description_en": "This portfolio. Built with Astro, dark minimalist design with cyan accent, JSON-driven data and automatic ES/EN language switching.",
     "tags": ["Astro", "CSS"],
-    "github": "https://github.com/v4dimsp/portfolio",
+    "github": "https://github.com/v4dimsp/portafolio",
     "demo": null,
     "status": "live"
   },
