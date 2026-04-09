@@ -1,7 +1,7 @@
 {
   "alias": "Vadim S.P",
   "role": "Full Stack Developer",
-  "tagline": "Empecé curiosidad por entender cómo funcionan las cosas. Hoy construyo software con esa misma mentalidad.",
+  "tagline": "Empecé con curiosidad por entender cómo funcionan las cosas. Hoy construyo software con esa misma mentalidad.",
   "tagline_en": "I started out curious about how things work. Today I build software with that same mindset.",
   "about": [
     "Desarrollador Full Stack de 24 años con raíces bielorrusas y criado en Zaragoza. Mi camino en la tecnología empezó de forma autodidacta con tutoriales de Java y modificando servidores de Minecraft, configurando plugins y entendiendo cómo funcionaban por dentro. Ahí empecé a escribir código de verdad y a construir mis primeras bases.",
@@ -25,7 +25,7 @@
   "github": "https://github.com/v4dimsp",
   "linkedin": "https://www.linkedin.com/in/vadzim-savon-pauliukevich-078463298/",
   "languages": [
-    { "name": "Bielorruso", "name_en": "Belarusian", "level": "Nativo",     "level_en": "Native"       },
+    { "name": "Ruso", "name_en": "Russian", "level": "Intermedio",     "level_en": "Intermediate"       },
     { "name": "Español",    "name_en": "Spanish",    "level": "Nativo",     "level_en": "Native"       },
     { "name": "Inglés",     "name_en": "English",    "level": "Intermedio", "level_en": "Intermediate" }
   ]
