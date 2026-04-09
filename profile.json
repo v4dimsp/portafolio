@@ -1,0 +1,32 @@
+{
+  "alias": "Vadim S.P",
+  "role": "Full Stack Developer",
+  "tagline": "Empecé con curiosidad por entender cómo funcionan las cosas. Hoy construyo software con esa misma mentalidad.",
+  "tagline_en": "I started out curious about how things work. Today I build software with that same mindset.",
+  "about": [
+    "Desarrollador Full Stack de 24 años con raíces bielorrusas y criado en Zaragoza. Mi camino en la tecnología empezó de forma autodidacta con tutoriales de Java y modificando servidores de Minecraft, configurando plugins y entendiendo cómo funcionaban por dentro. Ahí empecé a escribir código de verdad y a construir mis primeras bases.",
+    
+    "Después di el salto a Python, creando bots y automatizaciones, lo que me ayudó a afianzar la lógica de programación y a ganar confianza desarrollando sistemas desde cero. Más adelante trabajé en proyectos para servidores de FiveM con hasta 70 jugadores, utilizando JavaScript, Lua y HTML, donde profundicé en la sincronización cliente-servidor y en la lógica de cómo se comunican y mantienen el estado los sistemas en tiempo real.",
+    
+    "Tras esa etapa más autodidacta, pasé por SMR y DAM, donde consolidé bases sólidas de programación, estructuras de datos y buenas prácticas de desarrollo. Actualmente sigo creciendo como desarrollador trabajando con Java, Python y Node.js en proyectos personales y profesionales, e incorporando la inteligencia artificial como herramienta diaria para mejorar mi código, explorar soluciones y optimizar mi forma de desarrollar.",
+    
+    "Fuera del trabajo académico, desarrollo proyectos propios como sistemas para comunidades de videojuegos y herramientas que terminan siendo usadas por usuarios reales. Me motiva construir software funcional, útil y directo, que no necesite demasiada explicación. Busco un equipo donde pueda aportar desde el primer día y seguir creciendo junto a personas que disfruten construyendo productos bien hechos."
+  ],
+  "about_en": [
+    "Full Stack Developer, 24 years old, with Belarusian roots and raised in Zaragoza, Spain. My journey into tech didn't start with frameworks or tutorials — it started by fixing machines, managing networks, and understanding systems from the ground up. I began with Java tutorials and Minecraft server modding, configuring plugins and learning how everything worked behind the scenes. That’s where I wrote my first real code and built my foundation.",
+    
+    "From there I moved into Python, building bots and automation tools, which helped me strengthen my programming logic and gain confidence in building systems from scratch. Later, I developed projects for FiveM servers with up to 70 players using JavaScript, Lua, and HTML, where I gained a deeper understanding of client-server synchronization and how real-time systems maintain and share state across connected clients.",
+    
+    "After that self-taught stage, I went through SMR and DAM, where I built solid foundations in programming, data structures, and development best practices. Today I continue growing as a developer working with Java, Python, and Node.js in personal and professional projects, while also integrating artificial intelligence into my daily workflow to improve my code, explore solutions, and enhance my development process.",
+    
+    "Outside of formal education, I build my own projects such as tools for gaming communities and systems that end up being used by real users. I'm motivated by building software that is functional, useful, and straightforward. I'm looking for a team where I can contribute from day one and keep growing alongside people who enjoy building well-crafted products."
+  ],
+  "avatar": "/placeholder.svg",
+  "github": "https://github.com/v4dimsp",
+  "linkedin": "https://www.linkedin.com/in/vadzim-savon-pauliukevich-078463298/",
+  "languages": [
+    { "name": "Ruso", "name_en": "Russian", "level": "Intermedio",     "level_en": "Intermediate"       },
+    { "name": "Español",    "name_en": "Spanish",    "level": "Nativo",     "level_en": "Native"       },
+    { "name": "Inglés",     "name_en": "English",    "level": "Intermedio", "level_en": "Intermediate" }
+  ]
+}

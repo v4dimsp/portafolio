@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Lenguajes",
+    "items": ["Java", "Python", "JavaScript", "C#", "HTML", "CSS"]
+  },
+  {
+    "category": "Frameworks",
+    "items": ["Node.js", "Astro", "React"]
+  },
+  {
+    "category": "Bases de Datos",
+    "items": ["MySQL", "MongoDB", "PostgreSQL", "SQL Server"]
+  },
+  {
+    "category": "Herramientas",
+    "items": ["Git", "GitHub", "Android Studio", "Docker", "Linux"]
+  }
+]

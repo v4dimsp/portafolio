@@ -1,0 +1,204 @@
+---
+import education from '../data/education.json';
+import experience from '../data/experience.json';
+---
+
+<section id="education">
+  <hr class="divider" />
+  <div class="container">
+    <p class="section-label" data-i18n="section.edu.label">Trayectoria</p>
+    <h2 class="section-title" data-i18n="section.edu.title">Educación & Experiencia</h2>
+
+    <div class="timeline-wrapper">
+
+      <!-- Experiencia -->
+      <div class="timeline-col">
+        <h3 class="timeline-col__title">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2"/>
+            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+          </svg>
+          <span data-i18n="edu.col.exp">Experiencia</span>
+        </h3>
+
+        {experience.map((item, indx) => (
+          <div class="timeline-item">
+            <div class={`timeline-item__dot ${indx === 0 ? 'timeline-item__dot--active' : ''}`}></div>
+            <div class="timeline-item__content">
+              <div class="timeline-item__header">
+                <h4 class="timeline-item__role">{item.role}</h4>
+                <span class={`timeline-item__period ${indx === 0 ? 'timeline-item__period--current' : ''}`}>{item.period}</span>
+              </div>
+              <p class="timeline-item__company">{item.company}</p>
+              <ul class="timeline-item__highlights">
+                {item.highlights.map(h => (
+                  <li>{h}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Educación -->
+      <div class="timeline-col">
+        <h3 class="timeline-col__title">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+          </svg>
+          <span data-i18n="edu.col.edu">Educación</span>
+        </h3>
+
+        {education.map((item, idx) => (
+          <div class="timeline-item">
+            <div class={`timeline-item__dot ${idx === 0 ? 'timeline-item__dot--active' : ''}`}></div>
+            <div class="timeline-item__content">
+              <div class="timeline-item__header">
+                <h4 class="timeline-item__role">{item.title}</h4>
+                <span class={`timeline-item__period ${idx === 0 ? 'timeline-item__period--current' : ''}`}>{item.period}</span>
+              </div>
+              <p class="timeline-item__company">{item.institution}</p>
+              <ul class="timeline-item__highlights">
+                {item.highlights.map(h => (
+                  <li>{h}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .timeline-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+
+  .timeline-col__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .timeline-item + .timeline-item {
+    margin-top: 36px;
+  }
+
+  .timeline-item__dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--bg-base);
+    border: 1.5px solid var(--text-muted);
+    flex-shrink: 0;
+    margin-top: 5px;
+    transition: border-color var(--transition);
+  }
+
+  .timeline-item__dot--active {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
+  }
+
+  .timeline-item__content {
+    flex: 1;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .timeline-item:last-child .timeline-item__content {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .timeline-item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+
+  .timeline-item__role {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.4;
+  }
+
+  .timeline-item__period {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-muted);
+    white-space: nowrap;
+    padding: 3px 8px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    flex-shrink: 0;
+  }
+
+  .timeline-item__period--current {
+    color: var(--accent);
+    border-color: rgba(0, 212, 255, 0.3);
+    background: rgba(0, 212, 255, 0.06);
+  }
+
+  .timeline-item__company {
+    font-size: 13px;
+    color: var(--accent);
+    opacity: 0.75;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  .timeline-item__highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .timeline-item__highlights li {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    padding-left: 14px;
+    position: relative;
+  }
+
+  .timeline-item__highlights li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    color: var(--border);
+  }
+
+  @media (max-width: 768px) {
+    .timeline-wrapper {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+  }
+</style>
