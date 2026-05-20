@@ -26,14 +26,21 @@ import experience from '../data/experience.json';
             <div class={`timeline-item__dot ${indx === 0 ? 'timeline-item__dot--active' : ''}`}></div>
             <div class="timeline-item__content">
               <div class="timeline-item__header">
-                <h4 class="timeline-item__role">{item.role}</h4>
-                <span class={`timeline-item__period ${indx === 0 ? 'timeline-item__period--current' : ''}`}>{item.period}</span>
+                <h4 class="timeline-item__role">
+                  <span class="i18n-es">{item.role}</span>
+                  <span class="i18n-en">{item.role_en}</span>
+                </h4>
+                <span class={`timeline-item__period ${indx === 0 ? 'timeline-item__period--current' : ''}`}>
+                  <span class="i18n-es">{item.period}</span>
+                  <span class="i18n-en">{item.period_en}</span>
+                </span>
               </div>
               <p class="timeline-item__company">{item.company}</p>
-              <ul class="timeline-item__highlights">
-                {item.highlights.map(h => (
-                  <li>{h}</li>
-                ))}
+              <ul class="timeline-item__highlights i18n-es">
+                {item.highlights.map(h => <li>{h}</li>)}
+              </ul>
+              <ul class="timeline-item__highlights i18n-en">
+                {item.highlights_en.map(h => <li>{h}</li>)}
               </ul>
             </div>
           </div>
@@ -55,14 +62,21 @@ import experience from '../data/experience.json';
             <div class={`timeline-item__dot ${idx === 0 ? 'timeline-item__dot--active' : ''}`}></div>
             <div class="timeline-item__content">
               <div class="timeline-item__header">
-                <h4 class="timeline-item__role">{item.title}</h4>
-                <span class={`timeline-item__period ${idx === 0 ? 'timeline-item__period--current' : ''}`}>{item.period}</span>
+                <h4 class="timeline-item__role">
+                  <span class="i18n-es">{item.title}</span>
+                  <span class="i18n-en">{item.title_en}</span>
+                </h4>
+                <span class={`timeline-item__period ${idx === 0 ? 'timeline-item__period--current' : ''}`}>
+                  <span class="i18n-es">{item.period}</span>
+                  <span class="i18n-en">{item.period_en}</span>
+                </span>
               </div>
               <p class="timeline-item__company">{item.institution}</p>
-              <ul class="timeline-item__highlights">
-                {item.highlights.map(h => (
-                  <li>{h}</li>
-                ))}
+              <ul class="timeline-item__highlights i18n-es">
+                {item.highlights.map(h => <li>{h}</li>)}
+              </ul>
+              <ul class="timeline-item__highlights i18n-en">
+                {item.highlights_en.map(h => <li>{h}</li>)}
               </ul>
             </div>
           </div>

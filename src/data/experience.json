@@ -1,36 +1,61 @@
 [
   {
-    "company": "Goya Soluciones",
-    "role": "Programador Web",
-    "period": "Mar 2026 – Actualidad",
-    "highlights": [
-      "Desarrollo de aplicaciones web empresariales sobre la plataforma low-code Flexygo",
-      "Implementación de lógica de negocio y servicios backend en C# con integración en SQL Server y MySQL",
-      "Diseño y modelado de bases de datos relacionales orientado a rendimiento y escalabilidad",
-      "Análisis de requerimientos del cliente y adaptación de módulos existentes a nuevas necesidades funcionales"
-    ]
-  },
-  {
-    "company": "ReM Informática",
-    "role": "Técnico de Sistemas – Prácticas",
-    "period": "2022 – 2024",
-    "highlights": [
-      "Administración de infraestructura Windows en entornos empresariales multi-equipo",
-      "Configuración, monitoreo y mantenimiento de servidores y estaciones de trabajo",
-      "Gestión de redes locales: DNS, DHCP y Active Directory con control de accesos y políticas de grupo",
-      "Diagnóstico y resolución de incidencias de hardware, software y conectividad"
-    ]
-  },
-  {
     "company": "Freelance",
     "role": "Desarrollador – Servidores de Videojuegos",
-    "period": "2021 – 2025",
+    "role_en": "Developer – Game Servers",
+    "period": "2021 – Actualidad",
+    "period_en": "2021 – Present",
     "highlights": [
       "Desarrollo de sistemas backend para servidores FiveM con hasta 70 jugadores simultáneos en Lua y JavaScript",
       "Implementación de lógica cliente-servidor con sincronización de estado en tiempo real",
       "Creación de interfaces HUD e inventarios embebidos con HTML y CSS mediante la API NUI de FiveM",
       "Configuración y administración de servidores Minecraft: plugins en Java, gestión de permisos y optimización de rendimiento",
       "Gestión directa con clientes: toma de requisitos, entregas iterativas y soporte post-lanzamiento"
+    ],
+    "highlights_en": [
+      "Backend system development for FiveM servers with up to 70 concurrent players in Lua and JavaScript",
+      "Client-server logic implementation with real-time state synchronization",
+      "HUD interfaces and embedded inventories built with HTML and CSS using FiveM's NUI API",
+      "Minecraft server setup and administration: Java plugins, permission management and performance optimization",
+      "Direct client management: requirements gathering, iterative delivery and post-launch support"
+    ]
+  },
+  {
+    "company": "Goya Soluciones",
+    "role": "Programador Web",
+    "role_en": "Web Developer",
+    "period": "2026 (Marzo) – 2026 (Mayo)",
+    "period_en": "2026 (March) – 2026 (May)",
+    "highlights": [
+      "Desarrollo de aplicaciones web empresariales sobre la plataforma low-code Flexygo",
+      "Implementación de lógica de negocio y servicios backend en C# con integración en SQL Server y MySQL",
+      "Diseño y modelado de bases de datos relacionales orientado a rendimiento y escalabilidad",
+      "Análisis de requerimientos del cliente y adaptación de módulos existentes a nuevas necesidades funcionales"
+    ],
+    "highlights_en": [
+      "Enterprise web application development on the Flexygo low-code platform",
+      "Business logic and backend services implementation in C# with SQL Server and MySQL integration",
+      "Relational database design and modeling focused on performance and scalability",
+      "Client requirements analysis and adaptation of existing modules to new functional needs"
+    ]
+  },
+  {
+    "company": "ReM Informática",
+    "role": "Técnico de Sistemas – Prácticas",
+    "role_en": "Systems Technician – Internship",
+    "period": "2022 – 2024",
+    "period_en": "2022 – 2024",
+    "highlights": [
+      "Administración de infraestructura Windows en entornos empresariales multi-equipo",
+      "Configuración, monitoreo y mantenimiento de servidores y estaciones de trabajo",
+      "Gestión de redes locales: DNS, DHCP y Active Directory con control de accesos y políticas de grupo",
+      "Diagnóstico y resolución de incidencias de hardware, software y conectividad"
+    ],
+    "highlights_en": [
+      "Windows infrastructure administration in multi-device enterprise environments",
+      "Configuration, monitoring and maintenance of servers and workstations",
+      "Local network management: DNS, DHCP and Active Directory with access control and group policies",
+      "Diagnosis and resolution of hardware, software and connectivity incidents"
     ]
   }
 ]

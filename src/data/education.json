@@ -1,38 +1,65 @@
 [
   {
     "title": "Master Desarrollo Full Stack",
+    "title_en": "Full Stack Development Master's",
     "institution": "MasterD",
     "period": "2025 – Actualidad",
+    "period_en": "2025 – Present",
     "highlights": [
       "Desarrollo Full Stack con Spring, Django y Node.js",
       "Diseño de bases de datos SQL/NoSQL (MySQL, MongoDB)",
       "Desarrollo de APIs con integración cliente-servidor",
       "Seguridad Web e Inteligencia Artificial aplicada",
       "Metodología Scrum y flujos de trabajo ágiles"
+    ],
+    "highlights_en": [
+      "Full Stack development with Spring, Django and Node.js",
+      "SQL/NoSQL database design (MySQL, MongoDB)",
+      "API development with client-server integration",
+      "Web Security and applied Artificial Intelligence",
+      "Scrum methodology and agile workflows"
     ]
   },
   {
     "title": "Grado Superior – Desarrollo de Aplicaciones Multiplataforma",
+    "title_en": "Higher Degree – Cross-Platform Application Development",
     "institution": "FP",
     "period": "2022 – 2024",
+    "period_en": "2022 – 2024",
     "highlights": [
       "Desarrollo móvil nativo con Android Studio",
       "Programación Orientada a Objetos en Java",
       "Gestión de bases de datos SQL y NoSQL",
       "Comunicación y transmisión de datos via Sockets con Python",
       "Integración de información con HTML y XML"
+    ],
+    "highlights_en": [
+      "Native mobile development with Android Studio",
+      "Object-Oriented Programming in Java",
+      "SQL and NoSQL database management",
+      "Data communication via Sockets with Python",
+      "Information integration with HTML and XML"
     ]
   },
   {
     "title": "Grado Medio – Sistemas Microinformáticos y Redes",
+    "title_en": "Intermediate Degree – Microcomputer Systems and Networks",
     "institution": "FP",
     "period": "2020 – 2022",
+    "period_en": "2020 – 2022",
     "highlights": [
       "Administración de sistemas Windows y Linux",
       "Automatización con scripts BATCH y BASH",
       "Infraestructura de redes locales (LAN)",
       "Soporte y mantenimiento de hardware",
       "Herramientas de productividad ofimática"
+    ],
+    "highlights_en": [
+      "Windows and Linux system administration",
+      "Automation with BATCH and BASH scripts",
+      "Local area network (LAN) infrastructure",
+      "Hardware support and maintenance",
+      "Office productivity tools"
     ]
   }
 ]
