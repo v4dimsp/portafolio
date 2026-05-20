@@ -4,21 +4,33 @@
     "role": "Programador Web",
     "period": "Mar 2026 – Actualidad",
     "highlights": [
-      "Desarrollo de aplicaciones web empresariales con la plataforma Flexygo (low-code)",
-      "Programación de lógica de negocio y servicios backend en C#",
-      "Diseño, modelado y gestión de bases de datos relacionales con MySQL",
-      "Adaptación e integración de módulos según requerimientos del cliente"
+      "Desarrollo de aplicaciones web empresariales sobre la plataforma low-code Flexygo",
+      "Implementación de lógica de negocio y servicios backend en C# con integración en SQL Server y MySQL",
+      "Diseño y modelado de bases de datos relacionales orientado a rendimiento y escalabilidad",
+      "Análisis de requerimientos del cliente y adaptación de módulos existentes a nuevas necesidades funcionales"
     ]
   },
   {
     "company": "ReM Informática",
-    "role": "Técnico Informático – Prácticas",
+    "role": "Técnico de Sistemas – Prácticas",
     "period": "2022 – 2024",
     "highlights": [
-      "Administración de sistemas Windows en entornos empresariales",
-      "Configuración y monitoreo de servidores y estaciones de trabajo",
-      "Gestión de redes locales: DNS, DHCP, Active Directory",
-      "Implementación de políticas de seguridad y resolución de incidencias"
+      "Administración de infraestructura Windows en entornos empresariales multi-equipo",
+      "Configuración, monitoreo y mantenimiento de servidores y estaciones de trabajo",
+      "Gestión de redes locales: DNS, DHCP y Active Directory con control de accesos y políticas de grupo",
+      "Diagnóstico y resolución de incidencias de hardware, software y conectividad"
+    ]
+  },
+  {
+    "company": "Freelance",
+    "role": "Desarrollador – Servidores de Videojuegos",
+    "period": "2021 – 2025",
+    "highlights": [
+      "Desarrollo de sistemas backend para servidores FiveM con hasta 70 jugadores simultáneos en Lua y JavaScript",
+      "Implementación de lógica cliente-servidor con sincronización de estado en tiempo real",
+      "Creación de interfaces HUD e inventarios embebidos con HTML y CSS mediante la API NUI de FiveM",
+      "Configuración y administración de servidores Minecraft: plugins en Java, gestión de permisos y optimización de rendimiento",
+      "Gestión directa con clientes: toma de requisitos, entregas iterativas y soporte post-lanzamiento"
     ]
   }
 ]
