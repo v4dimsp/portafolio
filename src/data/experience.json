@@ -1,31 +1,10 @@
 [
   {
-    "company": "Freelance",
-    "role": "Desarrollador – Servidores de Videojuegos",
-    "role_en": "Developer – Game Servers",
-    "period": "2021 – Actualidad",
-    "period_en": "2021 – Present",
-    "highlights": [
-      "Desarrollo de sistemas backend para servidores FiveM con hasta 70 jugadores simultáneos en Lua y JavaScript",
-      "Implementación de lógica cliente-servidor con sincronización de estado en tiempo real",
-      "Creación de interfaces HUD e inventarios embebidos con HTML y CSS mediante la API NUI de FiveM",
-      "Configuración y administración de servidores Minecraft: plugins en Java, gestión de permisos y optimización de rendimiento",
-      "Gestión directa con clientes: toma de requisitos, entregas iterativas y soporte post-lanzamiento"
-    ],
-    "highlights_en": [
-      "Backend system development for FiveM servers with up to 70 concurrent players in Lua and JavaScript",
-      "Client-server logic implementation with real-time state synchronization",
-      "HUD interfaces and embedded inventories built with HTML and CSS using FiveM's NUI API",
-      "Minecraft server setup and administration: Java plugins, permission management and performance optimization",
-      "Direct client management: requirements gathering, iterative delivery and post-launch support"
-    ]
-  },
-  {
     "company": "Goya Soluciones",
     "role": "Programador Web",
     "role_en": "Web Developer",
-    "period": "2026 (Marzo) – 2026 (Mayo)",
-    "period_en": "2026 (March) – 2026 (May)",
+    "period": "Mar 2026 – Actualidad",
+    "period_en": "Mar 2026 – Present",
     "highlights": [
       "Desarrollo de aplicaciones web empresariales sobre la plataforma low-code Flexygo",
       "Implementación de lógica de negocio y servicios backend en C# con integración en SQL Server y MySQL",
@@ -56,6 +35,27 @@
       "Configuration, monitoring and maintenance of servers and workstations",
       "Local network management: DNS, DHCP and Active Directory with access control and group policies",
       "Diagnosis and resolution of hardware, software and connectivity incidents"
+    ]
+  },
+  {
+    "company": "Freelance",
+    "role": "Desarrollador Backend – Proyectos en Producción",
+    "role_en": "Backend Developer – Production Systems",
+    "period": "2021 – 2025",
+    "period_en": "2021 – 2025",
+    "highlights": [
+      "Diseño e implementación de sistemas backend con lógica cliente-servidor en tiempo real, soportando hasta 70 usuarios simultáneos en producción",
+      "Sincronización de estado distribuido y gestión de eventos asíncronos en entornos de alta concurrencia con Lua y JavaScript",
+      "Desarrollo de interfaces embebidas (HUD, inventarios) con HTML y CSS integradas mediante API nativa",
+      "Arquitectura, despliegue y administración de servidores: plugins en Java, gestión de permisos y optimización de rendimiento",
+      "Ciclo completo de producto con clientes: toma de requisitos, entregas iterativas y soporte post-lanzamiento"
+    ],
+    "highlights_en": [
+      "Design and implementation of backend systems with real-time client-server logic, supporting up to 70 concurrent users in production",
+      "Distributed state synchronization and async event handling in high-concurrency environments using Lua and JavaScript",
+      "Embedded UI development (HUD, inventories) with HTML and CSS integrated via native API",
+      "Server architecture, deployment and administration: Java plugins, permission management and performance optimization",
+      "Full product lifecycle with clients: requirements gathering, iterative delivery and post-launch support"
     ]
   }
 ]
